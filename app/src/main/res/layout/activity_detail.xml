@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/image_view_detail"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:gravity="start|center"
+                android:lines="3"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/text_view_rank"
+                app:layout_constraintTop_toBottomOf="@id/image_view_detail"
+                android:id="@+id/text_view_title"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/text_view_rating"
+                app:layout_constraintTop_toBottomOf="@id/image_view_detail"
+                android:id="@+id/text_view_year"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:text="Rating: "
+                android:textSize="35sp"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/text_view_rank"
+                app:layout_constraintTop_toBottomOf="@id/text_view_year"
+                android:id="@+id/text_view_rating"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:text="Rank: "
+                android:gravity="center"
+                android:textSize="35sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/text_view_rating"
+                app:layout_constraintTop_toBottomOf="@id/text_view_year"
+                android:id="@+id/text_view_rank"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="About the Movie"
+                android:id="@+id/about_movie"
+                android:gravity="center"
+                android:textSize="20sp"
+                app:layout_constraintRight_toLeftOf="@id/place_holder_2"
+                app:layout_constraintTop_toBottomOf="@id/text_view_rank"
+                app:layout_constraintLeft_toRightOf="@id/place_holder_1"/>
+
+
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:background="@android:color/holo_red_dark"
+                android:id="@+id/place_holder_1"
+                app:layout_constraintRight_toLeftOf="@id/about_movie"
+                app:layout_constraintTop_toBottomOf="@id/text_view_rank"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@android:color/holo_red_dark"
+                android:id="@+id/place_holder_2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_rank"
+                app:layout_constraintLeft_toRightOf="@id/about_movie"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/about_movie"
+                android:id="@+id/tv_plot"
+                android:lines="3"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:id="@+id/tv_movie_info"
+                app:layout_constraintLeft_toRightOf="@id/place_holder_3"
+                app:layout_constraintRight_toLeftOf="@id/place_holder_4"
+                app:layout_constraintTop_toBottomOf="@id/tv_plot"
+                android:text="Movie Info"/>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:background="@android:color/holo_red_dark"
+                android:id="@+id/place_holder_3"
+                app:layout_constraintRight_toLeftOf="@id/tv_movie_info"
+                app:layout_constraintTop_toBottomOf="@id/tv_plot"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@android:color/holo_red_dark"
+                android:id="@+id/place_holder_4"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_plot"
+                app:layout_constraintLeft_toRightOf="@id/tv_movie_info"/>
+
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="Rating: "
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="end|center_vertical"
+                android:textSize="22sp"
+                android:id="@+id/rating_text"
+                app:layout_constraintRight_toLeftOf="@id/rating_detail"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_movie_info"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/rating_detail"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/rating_text"
+                app:layout_constraintTop_toBottomOf="@id/tv_movie_info"/>
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/genre_text"
+                android:text="Genre: "
+                android:gravity="end|center_vertical"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="22sp"
+                app:layout_constraintRight_toLeftOf="@id/genre_detail"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rating_detail"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:layout_marginTop="10dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/genre_detail"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/genre_text"
+                app:layout_constraintTop_toBottomOf="@id/rating_detail"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="Directors: "
+                android:gravity="end|center_vertical"
+                android:lines="3"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="22sp"
+                android:id="@+id/director_text"
+                app:layout_constraintRight_toLeftOf="@id/director_detail"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/genre_detail"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:layout_marginTop="10dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/director_detail"
+                app:layout_constraintLeft_toRightOf="@id/director_text"
+                app:layout_constraintTop_toBottomOf="@id/genre_detail"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="Release Date: "
+                android:gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="22sp"
+                android:id="@+id/release_date_text"
+                app:layout_constraintRight_toLeftOf="@id/release_date_detail"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/director_detail"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/release_date_detail"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/release_date_text"
+                app:layout_constraintTop_toBottomOf="@id/director_detail"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/runtime_text"
+                android:text="Runtime: "
+                android:gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="22sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/runtime_detail"
+                app:layout_constraintTop_toBottomOf="@id/release_date_detail"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/runtime_detail"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/runtime_text"
+                app:layout_constraintTop_toBottomOf="@id/release_date_detail"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/actors_text"
+                android:text="Actors: "
+                android:gravity="end|center_vertical"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="22sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/runtime_detail"
+                app:layout_constraintTop_toBottomOf="@id/runtime_detail"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:layout_marginTop="10dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/actors_detail"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/actors_text"
+                app:layout_constraintTop_toBottomOf="@id/runtime_detail"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    
+    
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
